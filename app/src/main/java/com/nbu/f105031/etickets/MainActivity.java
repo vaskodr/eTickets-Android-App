@@ -26,12 +26,10 @@ public class MainActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         btnRegister = findViewById(R.id.btnRegister);
 
-        // Check if the user is logged in
         SharedPreferences preferences = getSharedPreferences("user_session", MODE_PRIVATE);
         boolean isLoggedIn = preferences.getBoolean("is_logged_in", false);
 
         if (isLoggedIn) {
-            // Redirect to HomePageActivity
             Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
             startActivity(intent);
             finish();

@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextUsernameOrEmail;
     private EditText editTextPassword;
     private Button buttonLogin;
-    private Button buttonBack;  // Add this line
+    private Button buttonBack;
     private IAuthService authService;
 
     @Override
@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         editTextUsernameOrEmail = findViewById(R.id.usernameOrEmail);
         editTextPassword = findViewById(R.id.password);
         buttonLogin = findViewById(R.id.btnLogin);
-        buttonBack = findViewById(R.id.btnBack);  // Add this line
+        buttonBack = findViewById(R.id.btnBack);
 
         IUserService userService = new UserService(this);
         authService = new AuthService(this, userService);
@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        buttonBack.setOnClickListener(new View.OnClickListener() {  // Add this block
+        buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();

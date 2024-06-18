@@ -153,7 +153,6 @@ public class HomePageActivity extends AppCompatActivity implements AddBalanceFra
         String usernameOrEmail = preferences.getString("username_or_email", "User");
         updateBalance(usernameOrEmail);
 
-        // Start the sound service
         Intent soundIntent = new Intent(this, SoundService.class);
         startService(soundIntent);
     }

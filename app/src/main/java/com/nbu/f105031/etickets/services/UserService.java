@@ -137,12 +137,10 @@ public class UserService implements IUserService {
                 String email = userCursor.getString(1);
                 if (balance >= ticketPrice) {
 
-                    // Deduct the ticket price from the user balance
                     ContentValues userValues = new ContentValues();
                     userValues.put("balance", balance - ticketPrice);
                     db.update("users", userValues, "id = ?", new String[]{String.valueOf(userId)});
 
-                    // Insert order
                     ContentValues orderValues = new ContentValues();
                     orderValues.put("user_id", userId);
                     orderValues.put("ticket_id", ticketId);

@@ -33,7 +33,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        // Initialize views
         editTextUsername = findViewById(R.id.username);
         editTextEmail = findViewById(R.id.email);
         editTextPassword = findViewById(R.id.password);
@@ -41,11 +40,9 @@ public class RegisterActivity extends AppCompatActivity {
         buttonRegister = findViewById(R.id.btnRegister);
         buttonBack = findViewById(R.id.btnBack);
 
-        // Initialize services
         IUserService userService = new UserService(this);
         authService = new AuthService(this, userService);
 
-        // Register button click event
         buttonRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,7 +50,6 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
-        // Back button click event
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
