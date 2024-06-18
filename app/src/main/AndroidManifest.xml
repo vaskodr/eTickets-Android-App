@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nbu.f105031.etickets">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:theme="@style/Theme.ETickets"
+        android:label="eTickets"
+        android:icon="@mipmap/ic_launcher" >
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".HomePageActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".services.SoundService" />
+    </application>
+</manifest>

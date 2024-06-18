@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">eTickets</string>
+    <string name="etickets">eTickets</string>
+    <string name="please_sign_up_to_continue_using_the_app">Please, SIGN UP to continue using the App</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="back">Back</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="username_or_email">Username or Email</string>
+    <string name="log_in">Log In</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_name">Event Name</string>
+    <string name="event_price">Event Price</string>
+    <string name="buy_ticket">Buy Ticket</string>
+    <string name="welcome">Welcome, User, to eTickets App!</string>
+    <string name="balance_default">Balance: $0.0</string>
+    <string name="welcome_to_etickets">Welcome to eTickets</string>
+</resources>
